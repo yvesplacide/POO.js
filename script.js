@@ -13,7 +13,7 @@ const personne2 = new personne ("Kalo",5)
 personne1.introduce()
 personne2.introduce()
 
-class employe extends personne{
+class employe extends personne  {
     constructor(jobtitle){
         this.jobtitle = jobtitle;
     }
