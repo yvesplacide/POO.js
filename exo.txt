@@ -1,0 +1,5 @@
+exo2 Heritage avec la class employé 
+
+creer une classe employe qui herite de la classe personne 
+ajouter une propriete job-title a employe
+ajouter une methode appele work et cette methode qui affiche name travaille en tant que job-title
