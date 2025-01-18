@@ -1,23 +1,24 @@
-class personne{
-    constructor(name, age){ 
-this.name = name;
-this.age = age;
-}
-introduce(){
-    console.log(`je m'appelle ${this.name} et j'ai ${this.age}ans`)
-}
-}
-const personne1 = new personne("Yves", 10)
-const personne2 = new personne ("Kalo",5)
-
-personne1.introduce()
-personne2.introduce()
-
-class employe extends personne  {
-    constructor(jobtitle){
-        this.jobtitle = jobtitle;
+/* exo 2  correction*/
+class BanKAccount {
+  #Balance;
+  constructor(initial) {
+    this.#Balance = initial;
+  }
+  deposit(amount) {
+    this.#Balance += amount;
+  }
+  withdraw(amount) {
+    if (this.#Balance >= amount && this.#Balance > 0) {
+      this.#Balance -= amount;
+    } else {
+      console.log("Solde Insuffisant");
     }
-    Work(){
-        console.log(`${this.name} travaille en tant que ${jobtitle}`);
-    }
+  }
+  getBalance() {
+    console.log(`Solde actuel: ${this.#Balance}`);
+  }
 }
+const Banque1 = new BanKAccount(100);
+Banque1.deposit(100);
+Banque1.withdraw(1500);
+Banque1.getBalance();

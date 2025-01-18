@@ -3,3 +3,44 @@ exo2 Heritage avec la class employé
 creer une classe employe qui herite de la classe personne 
 ajouter une propriete job-title a employe
 ajouter une methode appele work et cette methode qui affiche name travaille en tant que job-title
+
+
+exo 2 sur whatsapp
+Voici les exercices a corriges demain
+
+### Exercice : EXO1
+
+1. Créez une classe BankAccount avec :
+    - Une propriété privée #balance pour stocker le solde.
+    - Un constructeur pour initialiser le solde.
+    - Une méthode deposit(amount) pour ajouter de l'argent au compte.
+    - Une méthode withdraw(amount) pour retirer de l'argent (si le solde est suffisant).
+    - Une méthode getBalance() pour afficher le solde.
+2. Créez une instance de BankAccount et effectuez des dépôts et des retraits.
+
+### **Exercice :**EXO2
+
+1. Créez une classe parent Animal avec :
+    - Une propriété name.
+    - Une méthode makeSound() qui affiche : "[Nom] fait un bruit."
+2. Créez une classe enfant Dog qui hérite de Animal et :
+    - Redéfinissez la méthode makeSound() pour afficher : "[Nom] aboie."
+3. Créez une instance de chaque classe et appelez leurs méthodes.
+
+### **Exercice :**EXO3
+
+1. Créez une classe parent Shape avec :
+    - Une méthode calculateArea() qui retourne : "Aire non définie pour cette forme."
+2. Créez deux classes enfants Rectangle et Circle :
+    - Rectangle a des propriétés width et height et redéfinit calculateArea() pour retourner l'aire du rectangle.
+    - Circle a une propriété radius et redéfinit calculateArea() pour retourner l'aire du cercle.
+3. Créez des instances de Rectangle et Circle, et appelez calculateArea() sur chacune.
+
+### **Exercice :**EXO4
+
+1. Créez une classe abstraite Payment avec :
+    - Une méthode abstraite processPayment(amount) qui doit être définie dans les classes enfants.
+2. Créez deux classes enfants CreditCardPayment et PayPalPayment :
+    - CreditCardPayment affiche : "Paiement de [amount]€ effectué avec une carte de crédit."
+    - PayPalPayment affiche : "Paiement de [amount]€ effectué avec PayPal."
+3. Essayez de créer une instance de Payment (ça devrait provoquer une erreur).
