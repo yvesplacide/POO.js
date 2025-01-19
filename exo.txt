@@ -18,7 +18,7 @@ Voici les exercices a corriges demain
     - Une méthode getBalance() pour afficher le solde.
 2. Créez une instance de BankAccount et effectuez des dépôts et des retraits.
 
-### **Exercice :**EXO2
+### **Exercice :**EXO2  
 
 1. Créez une classe parent Animal avec :
     - Une propriété name.

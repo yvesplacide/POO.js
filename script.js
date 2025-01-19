@@ -1,4 +1,4 @@
-/* class personne {
+class Personne {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -7,20 +7,23 @@
     console.log(`je m'appelle ${this.name} et j'ai ${this.age}ans`);
   }
 }
-const personne1 = new personne("Yves", 10);
-const personne2 = new personne("Kalo", 5);
+const personne1 = new Personne("Yves", 10);
+const personne2 = new Personne("Kalo", 5);
 
 personne1.introduce();
 personne2.introduce();
 
-class employe extends personne {
-  constructor(jobtitle) {
+class Employe extends Personne {
+  constructor(name, age, jobtitle) {
+    super(name, age);
     this.jobtitle = jobtitle;
   }
   Work() {
-    console.log(`${this.name} travaille en tant que ${jobtitle}`);
+    console.log(`${this.name} travaille en tant que ${this.jobtitle}`);
   }
-} */
+}
+const employe2 = new Employe("Yves", 10, "dev");
+employe2.Work();
 /* exo whatssap */
 /* exo 1  correction*/
 class BanKAccount {
@@ -42,12 +45,12 @@ class BanKAccount {
     console.log(`Solde actuel: ${this.#Balance}`);
   }
 }
+
 const banque1 = new BanKAccount(100);
 banque1.deposit(2000);
 banque1.withdraw(1500);
 banque1.getBalance();
 
-/* exo2 */
 //Créez une classe parent Animal avec Une propriété name.
 class Animal {
   constructor(name) {
@@ -62,7 +65,6 @@ class Animal {
 class Dog extends Animal {
   makeSound() {
     console.log(`${this.name} aboie.`);
-    console.log("Je suis un chien");
   }
 }
 //Créez une instance de chaque classe et appelez leurs méthodes.
